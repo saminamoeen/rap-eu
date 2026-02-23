@@ -1,0 +1,8 @@
+name: "Epic"
+description: "A high level feature"
+labels: ["type:epic"]
+body:
+  - type: textarea
+    attributes: { label: Outcome, description: "What success looks like" }
+  - type: textarea
+    attributes: { label: Stories, description: "Exemplar user stories" }

@@ -1,0 +1,24 @@
+name: "Story"
+description: "Describe a new feature"
+labels: ["type:story"]
+body:
+  - type: textarea
+    attributes:
+      label: User story
+      description: "As a <role>, I want <capability> so that <benefit>."
+    validations: { required: true }
+  - type: textarea
+    attributes:
+      label: Acceptance criteria
+      description: "Bullets; what must be true for Done."
+  - type: textarea
+    attributes:
+      label: Cost of Delay
+      description: |
+        The impact of time on the outcomes we hope to achieve?
+        What would it cost us if this was delayed by 1 month?
+        What would it be worth to us if we could get this 1 month earlier?
+  - type: dropdown
+    attributes:
+      label: Area
+      options: ["Frontend","API","M365","Workflow","Security"]
