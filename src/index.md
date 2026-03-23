@@ -1,5 +1,8 @@
-# Revenue Advance EU
+# Revenue Advance platform EU
 
-This is the home page of your new Observable Framework app.
+This dashboard presents data and insights related to the Revenue Advance Platform (RAP) project.
 
-For more, see <https://observablehq.com/framework/getting-started>.
+The platform aims to support B2B companies in making data-driven decisions about marketing, sales, and revenue growth.
+## Project Goal
+
+The goal of this project is to explore how business data can be integrated into a platform that helps companies understand their performance and identify opportunities for growth.
