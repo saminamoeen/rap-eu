@@ -15,11 +15,13 @@ This section will analyse the effectiveness of marketing campaigns.
 ## Customer Engagement Metrics
 This section will present customer interaction and engagement data.
 
+
+
 ## Revenue Growth Trends
 This section will show how revenue is changing over time.
 
+
 ## Sample Data Chart
-This chart is a simple example of how business data can be shown in the dashboard.
 
 ```js
 const salesData = [
@@ -33,7 +35,10 @@ const salesData = [
 display(
   Plot.plot({
     y: { grid: true, label: "Sales" },
-    
+    x: {
+      label: "Month",
+      domain: ["Jan", "Feb", "Mar", "Apr", "May"]
+    },
     marks: [
       Plot.barY(salesData, { x: "month", y: "sales" })
     ]
