@@ -18,7 +18,10 @@ const salesData = [
 display(
   Plot.plot({
     y: { grid: true, label: "Sales" },
-    x: { label: "Month" },
+    x: {
+  label: "Month",
+  domain: ["Jan", "Feb", "Mar", "Apr", "May"]
+},
     marks: [
       Plot.barY(salesData, { x: "month", y: "sales" })
     ]
