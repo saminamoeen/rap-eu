@@ -59,7 +59,10 @@ const engagementData = [
 display(
   Plot.plot({
     y: { grid: true, label: "Users" },
-    x: { label: "Month" },
+    x: {
+  label: "Month",
+  domain: ["Jan", "Feb", "Mar", "Apr", "May"]
+}
     marks: [
       Plot.lineY(engagementData, { x: "month", y: "users" }),
       Plot.dot(engagementData, { x: "month", y: "users" })
