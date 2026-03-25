@@ -45,3 +45,25 @@ display(
   })
 );
 ```
+## Customer Engagement Chart
+
+```js
+const engagementData = [
+  { month: "Jan", users: 50 },
+  { month: "Feb", users: 80 },
+  { month: "Mar", users: 120 },
+  { month: "Apr", users: 100 },
+  { month: "May", users: 140 }
+];
+
+display(
+  Plot.plot({
+    y: { grid: true, label: "Users" },
+    x: { label: "Month" },
+    marks: [
+      Plot.lineY(engagementData, { x: "month", y: "users" }),
+      Plot.dot(engagementData, { x: "month", y: "users" })
+    ]
+  })
+);
+```
