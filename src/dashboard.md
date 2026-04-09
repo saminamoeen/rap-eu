@@ -1,71 +1,79 @@
 # RAP EU Dashboard
+# Digital Bauhaus Funding Dashboard (EU Focus)
 
-This dashboard presents key insights from the Revenue Advance Platform (RAP) project.
+## 🎯 Project Overview
+This dashboard presents research on funding opportunities for Digital Bauhaus-type initiatives focused on:
+- Digital innovation
+- Sustainability / green transition
+- Creative industries
+- Skills development & youth engagement
 
+---
 
-Future work will include charts, datasets, and insights that help understand business performance.
+## 💰 Funding Opportunities
 
+### 1. Horizon Europe
+- What it funds: Innovation, sustainability, research projects
+- Who can apply: Universities, startups, organisations (often in partnerships)
+- Key requirements: Cross-country collaboration, strong impact
 
-## Sales Performance Overview
-This section will show sales trends and performance over time.
+---
 
-## Marketing Campaign Insights
-This section will analyse the effectiveness of marketing campaigns.
+### 2. Erasmus+
+- What it funds: Education, youth, skills development, mobility
+- Who can apply: Universities, NGOs, youth organisations
+- Key requirements: Learning outcomes, collaboration across countries
 
-## Customer Engagement Metrics
-This section will present customer interaction and engagement data.
+---
 
+### 3. European Social Fund Plus (ESF+)
+- What it funds: Employment, skills, social inclusion
+- Who can apply: Governments, NGOs, training organisations
+- Key requirements: Focus on skills, inclusion, job creation
 
+---
 
-## Revenue Growth Trends
-This section will show how revenue is changing over time.
+### 4. Creative Europe
+- What it funds: Cultural & creative industries
+- Who can apply: Creative organisations, cultural institutions
+- Key requirements: Innovation + cultural impact
 
+---
 
-## Sample Data Chart
+## 📊 Insights (What gets funded)
+- Projects combining **digital + sustainability**
+- Cross-border collaboration (EU partnerships)
+- Youth-focused skills development
+- Innovation with real-world impact
 
+---
+
+## ❌ What does NOT get funded
+- Pure business ideas without social impact
+- Single-person projects (usually need teams)
+- Projects without EU collaboration
+
+---
+
+## 📈 Next Steps
+- Add charts to compare funding programmes
+- Visualise types of projects supported
+## 📊 Funding Focus Comparison
 ```js
-const salesData = [
-  { month: "Jan", sales: 120 },
-  { month: "Feb", sales: 150 },
-  { month: "Mar", sales: 180 },
-  { month: "Apr", sales: 170 },
-  { month: "May", sales: 210 }
+import * as Plot from "@observablehq/plot";
+
+const data = [
+  { programme: "Horizon Europe", level: 5 },
+  { programme: "Erasmus+", level: 4 },
+  { programme: "ESF+", level: 4 },
+  { programme: "Creative Europe", level: 3 }
 ];
 
 display(
   Plot.plot({
-    y: { grid: true, label: "Sales" },
-    x: {
-      label: "Month",
-      domain: ["Jan", "Feb", "Mar", "Apr", "May"]
-    },
+    title: "Funding Program Comparison",
     marks: [
-      Plot.barY(salesData, { x: "month", y: "sales" })
-    ]
-  })
-);
-```
-## Customer Engagement Chart
-
-```js
-const engagementData = [
-  { month: "Jan", users: 50 },
-  { month: "Feb", users: 80 },
-  { month: "Mar", users: 120 },
-  { month: "Apr", users: 100 },
-  { month: "May", users: 140 }
-];
-
-display(
-  Plot.plot({
-    y: { grid: true, label: "Users" },
-    x: {
-  label: "Month",
-  domain: ["Jan", "Feb", "Mar", "Apr", "May"]
-}
-    marks: [
-      Plot.lineY(engagementData, { x: "month", y: "users" }),
-      Plot.dot(engagementData, { x: "month", y: "users" })
+      Plot.barY(data, { x: "programme", y: "level" })
     ]
   })
 );
