@@ -18,10 +18,15 @@ This project is an interactive dashboard exploring EU funding programmes, includ
 - Node.js  
 
 ## ▶️ Run Locally
-npm install  
-npm run dev  
 
-Then open: http://localhost:3000  
+## ▶️ Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Then open: http://localhost:3000
 
 ## 📊 Purpose
 This project was developed as part of research on EU funding programmes related to digital innovation and sustainability (Digital Bauhaus context).
