@@ -42,6 +42,44 @@ display(
   })
 )
 ```
+## 📊 Detailed Comparison
+
+```js
+const detailedData = [
+  { programme: "Horizon Europe", category: "Budget", value: 5 },
+  { programme: "Horizon Europe", category: "Accessibility", value: 3 },
+  { programme: "Horizon Europe", category: "Innovation", value: 5 },
+
+  { programme: "Erasmus+", category: "Budget", value: 4 },
+  { programme: "Erasmus+", category: "Accessibility", value: 5 },
+  { programme: "Erasmus+", category: "Innovation", value: 3 },
+
+  { programme: "ESF+", category: "Budget", value: 4 },
+  { programme: "ESF+", category: "Accessibility", value: 4 },
+  { programme: "ESF+", category: "Innovation", value: 3 },
+
+  { programme: "Creative Europe", category: "Budget", value: 3 },
+  { programme: "Creative Europe", category: "Accessibility", value: 4 },
+  { programme: "Creative Europe", category: "Innovation", value: 2 }
+];
+
+display(
+  Plot.plot({
+    title: "Detailed Comparison of Funding Programmes",
+    x: { label: "Programme" },
+    y: { label: "Score" },
+    color: { legend: true },
+    marks: [
+      Plot.barY(detailedData, {
+        x: "programme",
+        y: "value",
+        fill: "category",
+        fx: "category"
+      })
+    ]
+  })
+);
+```
 
 ## 📌 Key Insights
 
@@ -56,3 +94,41 @@ display(
 - Startups  
 - NGOs  
 - Public sector organisations
+## 📊 Detailed Comparison
+
+```js
+const detailedData = [
+  { programme: "Horizon Europe", category: "Budget", value: 5 },
+  { programme: "Horizon Europe", category: "Accessibility", value: 3 },
+  { programme: "Horizon Europe", category: "Innovation", value: 5 },
+
+  { programme: "Erasmus+", category: "Budget", value: 4 },
+  { programme: "Erasmus+", category: "Accessibility", value: 5 },
+  { programme: "Erasmus+", category: "Innovation", value: 3 },
+
+  { programme: "ESF+", category: "Budget", value: 4 },
+  { programme: "ESF+", category: "Accessibility", value: 4 },
+  { programme: "ESF+", category: "Innovation", value: 3 },
+
+  { programme: "Creative Europe", category: "Budget", value: 3 },
+  { programme: "Creative Europe", category: "Accessibility", value: 4 },
+  { programme: "Creative Europe", category: "Innovation", value: 2 }
+];
+
+display(
+  Plot.plot({
+    title: "Detailed Comparison of Funding Programmes",
+    x: { label: "Programme" },
+    y: { label: "Score" },
+    color: { legend: true },
+    marks: [
+      Plot.barY(detailedData, {
+        x: "programme",
+        y: "value",
+        fill: "category",
+        fx: "category"
+      })
+    ]
+  })
+);
+```
