@@ -132,3 +132,43 @@ display(
   })
 );
 ```
+## 📌 Analysis
+
+The chart shows a comparison of different EU funding programmes based on budget, accessibility, and innovation.
+
+Horizon Europe has the highest score in innovation and budget, which shows that it strongly supports research and advanced projects. However, its accessibility is lower compared to other programmes, which means it may be more competitive or difficult to access.
+
+Erasmus+ has the highest accessibility score, making it the most accessible programme for students and organisations. However, its innovation score is lower, indicating that it focuses more on education and mobility rather than research.
+
+ESF+ shows balanced scores across all categories, especially in accessibility and budget, which indicates that it supports employment and social inclusion effectively.
+
+Creative Europe has lower scores in innovation but moderate accessibility, which reflects its focus on cultural and creative sectors rather than technical innovation.
+
+Overall, the comparison shows that each programme has different strengths, and the choice depends on the needs of the applicant.
+## 📚 Programme Overview
+
+- **Horizon Europe**: Supports research and innovation projects across Europe.
+- **Erasmus+**: Focuses on education, student mobility, and international collaboration.
+- **ESF+**: Aims to improve employment opportunities and social inclusion.
+- **Creative Europe**: Supports cultural and creative industries.
+## 🎯 Recommendations
+
+Based on the analysis, users should select funding programmes according to their needs. 
+Horizon Europe is suitable for research and innovation-focused projects, while Erasmus+ is more appropriate for education and mobility purposes. ESF+ is beneficial for social and employment-related initiatives, whereas Creative Europe is ideal for cultural and creative sectors.
+
+This comparison can support decision-making by helping applicants choose the most relevant funding programme.
+## 🔗 Project Relevance
+
+This dashboard was developed as part of the RAP EU internship project to analyse and compare European funding programmes using data visualisation tools.
+## 📚 Programme Overview
+
+- **Horizon Europe** supports research and innovation projects across Europe.
+- **Erasmus+** focuses on education, mobility, and international collaboration.
+- **ESF+** supports employment, social inclusion, and skills development.
+- **Creative Europe** supports cultural and creative sectors.
+## 🎯 Recommendations
+
+Different funding programmes support different goals. Horizon Europe is suitable for research and innovation projects, while Erasmus+ is more accessible for education and mobility activities. ESF+ is useful for employment and social inclusion initiatives, and Creative Europe is beneficial for cultural and creative projects.
+## 🔗 Project Relevance
+
+This dashboard was developed during the RAP EU internship project to compare European funding programmes through data visualisation and comparative analysis.
